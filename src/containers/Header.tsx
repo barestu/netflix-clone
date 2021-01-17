@@ -11,7 +11,7 @@ export function HeaderContainer({ children }: HeaderProps) {
     <Header>
       <Header.Frame>
         <Header.Logo to="/" src={logo} alt="Netflix" />
-        <Header.ButtonLink to="/">Sign In</Header.ButtonLink>
+        <Header.ButtonLink to="/signin">Sign In</Header.ButtonLink>
       </Header.Frame>
       {children}
     </Header>
