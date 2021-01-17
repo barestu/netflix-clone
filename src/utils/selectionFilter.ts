@@ -1,8 +1,8 @@
-import { IContentInfo } from '../hooks/useContent'
+import { IContent } from '../types/shape';
 
 interface ISelectionFilterArg {
-  series: IContentInfo[];
-  films: IContentInfo[];
+  series: IContent[];
+  films: IContent[];
 }
 
 export default function selectionFilter({

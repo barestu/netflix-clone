@@ -1,8 +1,8 @@
 import React, { Dispatch, SetStateAction } from 'react';
 import { Header, Profiles } from '../components';
-import { IUserInfo } from '../hooks/useAuthListener';
 import * as ROUTES from '../constants/routes';
 import logo from '../logo.svg';
+import { IUserInfo } from '../types/shape';
 
 interface ISelectProfileProps {
   user: IUserInfo | null;

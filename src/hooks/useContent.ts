@@ -1,18 +1,9 @@
 import { useEffect, useState, useContext } from 'react';
 import { FirebaseContext } from '../context/firebase';
-
-export interface IContentInfo {
-  docId?: string | null;
-  description?: string | null;
-  genre?: string | null;
-  id?: string | null;
-  maturity?: string | null;
-  slug?: string | null;
-  title?: string | null;
-}
+import { IContent } from '../types/shape'
 
 export default function useContent(target: string) {
-  const [content, setContent] = useState<IContentInfo[]>([]);
+  const [content, setContent] = useState<IContent[]>([]);
   const { firebase } = useContext(FirebaseContext);
 
   useEffect(() => {
